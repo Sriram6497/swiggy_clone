@@ -20,7 +20,7 @@ app.use("/api/firm", firmRoute)
 
 app.use("/uploads", express.static("uploads"));
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
 
     console.log("Server Started");
     createDatabase();
